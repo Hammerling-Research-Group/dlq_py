@@ -1,11 +1,32 @@
 # dlq_py
 *Production code for the Python implementation of the DLQ algorithm*
 
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 This repo contains the production code for the Python implementation of the DLQ algorithm. The original version is in R and can be found [here](https://github.com/Hammerling-Research-Group/dlq). As with the R version, the algorithm proceeds in two main steps in an effort to estimate methane emission start and end time (detection), source location (localization), and emission rate (quantification) using concentration observations from a network of point-in-space continuous monitoring systems. 
 
 For more on this work, see Daniels et al. (2024), https://doi.org/10.1525/elementa.2023.00110
 
 ## Notes on the Python Implementation
+
+Here's the current structure (*subject to change as this project is in active development*):
+
+```bash
+dlq_py/
+├── code/
+│   ├── step1_simulate.py
+│   ├── step2_dlq.py
+│   ├── helper_distance_conversions.py
+│   ├── helper_gpuff_function.py
+│   ├── Input_data.zip
+│   ├── Input_data_step2.zip
+├── tests/
+│   ├── test_step1_simulate.py
+│   ├── test_step2_dlq.py
+├── LICENSE
+├── README.md
+└── env.yml
+```
 
 A few key notes are worth highlighting for the Python implementation: 
 
@@ -73,21 +94,3 @@ Example Output:
   4.	Event-Simulation Alignment: Compare detected events with simulation data to ensure consistency and calculate performance metrics.
   5.	Source Localization and Emission Rate Estimation: Estimate the location of methane sources and quantifies emission rates for each detected event.
 
-## Current Structure
-
-```bash
-dlq_py/
-├── code/
-│   ├── step1_simulate.py
-│   ├── step2_dlq.py
-│   ├── helper_distance_conversions.py
-│   ├── helper_gpuff_function.py
-│   ├── Input_data.zip
-│   ├── Input_data_step2.zip
-├── tests/
-│   ├── test_step1_simulate.py
-│   ├── test_step2_dlq.py
-├── LICENSE
-├── README.md
-└── env.yml
-```
