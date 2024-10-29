@@ -9,7 +9,6 @@ from joblib import Parallel, delayed
 from tqdm import tqdm
 from datetime import datetime
 from functools import partial
-from concurrent.futures import ProcessPoolExecutor
 from math import sqrt, pi, cos, sin, atan2
 import pytz
 from typing import List, Tuple
