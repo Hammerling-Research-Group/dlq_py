@@ -10,7 +10,7 @@ dlq_py/
 │   ├── step2_dlq.py
 │   ├── helper_distance_conversions.py
 │   ├── helper_gpuff_function.py
-│   ├── input_data.zip
+│   ├── Input_data.zip
 ├── tests/
 │   ├── test_step1_simulate.py
 │   ├── test_step2_dlq.py
