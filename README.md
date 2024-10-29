@@ -3,6 +3,7 @@ The Python Implementation of the DLQ Algorithm
 
 ## Current Structure
 
+```bash
 dlq_py/
 ├── code/
 │   ├── step1_simulate.py
@@ -14,3 +15,4 @@ dlq_py/
 │   └── test_helpers.py
 ├── README.md
 └── env.yml
+```
