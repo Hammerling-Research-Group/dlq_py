@@ -13,6 +13,7 @@ dlq_py/
 │   ├── test_step1_simulate.py
 │   ├── test_step2_dlq.py
 │   └── test_helpers.py
+├── LICENSE
 ├── README.md
 └── env.yml
 ```
