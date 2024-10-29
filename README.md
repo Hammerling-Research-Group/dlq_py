@@ -17,6 +17,22 @@ A few key notes are worth highlighting for the Python implementation:
 
 ## Installation
 
+The simplest approach to implement this code is to ingest the full repo. To do so, simply run the following to save the full codebase locally (in this example, it would save to your Desktop; update as you'd like):
+
+```python
+import requests
+import zipfile
+import os
+
+response = requests.get("https://github.com/Hammerling-Research-Group/dlq_py/archive/refs/heads/main.zip")
+
+with open("dlq_py.zip", 'wb') as f:
+    f.write(response.content)
+
+with zipfile.ZipFile("dlq_py.zip", 'r') as zip_ref:
+    zip_ref.extractall(os.path.expanduser("~/Desktop/dlq_py")) # or wherever you'd like
+```
+
 ## Usage
 
   1. Place the input CSV files in the same directory where the script is executed or update the file paths in the script accordingly
