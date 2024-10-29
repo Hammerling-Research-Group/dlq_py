@@ -12,7 +12,17 @@ A few key notes are worth highlighting for the Python implementation:
   - Before using the scripts, users need to have a properly configured environment. This can be loaded, to ensure all needed dependencies are available, by running `conda env create -f env.yml`.
   - Execute step 1 by running `python step1_simulate.py`
   - Step 2 processes raw sensor readings by removing background noise, detecting spikes in methane concentrations (events), aligning the detected events with simulation data, and performing a quantitative analysis of these events, including emission source localization and rate estimation
-  - For step 2, be sure to edit the configuration file to adjust parameters such as file paths, thresholds for event detection, and simulation data location
+  - For step 2, be sure to edit the configuration file to adjust parameters such as file paths, thresholds for event detection, and simulation data location, e.g.,
+
+```python
+config = {
+    'gap_time': 5,
+    'length_threshold': 2,
+    'simulation_data_path': "/path/to/simulation_output_new.pkl",
+    'output_file_path': "/path/to/output/",
+}
+```
+
   - Execute step 2 by running `python step2_dlq.py`
 
 ## Installation
