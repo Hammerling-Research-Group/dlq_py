@@ -8,7 +8,9 @@ dlq_py/
 ├── code/
 │   ├── step1_simulate.py
 │   ├── step2_dlq.py
-│   ├── helpers.py
+│   ├── helper_distance_conversions.py
+│   ├── helper_gpuff_function.py
+│   ├── input_data.zip
 ├── tests/
 │   ├── test_step1_simulate.py
 │   ├── test_step2_dlq.py
