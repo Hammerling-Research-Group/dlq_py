@@ -48,20 +48,26 @@ config = {
 
 ## Installation
 
-The simplest approach to implement this code is to ingest the full repo. To do so, simply run the following to save the full codebase locally (in this example, it would save to your Desktop; update as you'd like):
+Though the current code is still largely in "research code" form, users are still encouraged to engage with it. 
 
-```python
-import requests
-import zipfile
-import os
+To do so, the simplest approach is to clone the repo and work from the `dlq_py` directory. 
 
-response = requests.get("https://github.com/Hammerling-Research-Group/dlq_py/archive/refs/heads/main.zip")
+1. Set your desired directory from which to work. E.g., for your Desktop:
 
-with open("dlq_py.zip", 'wb') as f:
-    f.write(response.content)
+```bash
+$ cd Desktop
+```
 
-with zipfile.ZipFile("dlq_py.zip", 'r') as zip_ref:
-    zip_ref.extractall(os.path.expanduser("~/Desktop/dlq_py")) # or wherever you'd like
+2. Clone and store `dlq_py` at the desired location:
+
+```bash
+$ git clone https://github.com/Hammerling-Research-Group/dlq_py.git
+```
+
+3. Move into the cloned `dlq_py` directory:
+
+```bash
+$ cd dlq_py
 ```
 
 ## Usage
