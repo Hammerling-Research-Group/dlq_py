@@ -7,6 +7,30 @@ This repo contains the production code for the Python implementation of the DLQ 
 
 For more on this work, see Daniels et al. (2024), https://doi.org/10.1525/elementa.2023.00110
 
+## Installation
+
+Though the current code is still largely in "research code" form, users are still encouraged to engage with it. 
+
+To do so, the simplest approach is to clone the repo and work from the `dlq_py` directory. 
+
+1. Set your desired directory from which to work. E.g., for your Desktop:
+
+```bash
+$ cd Desktop
+```
+
+2. Clone and store `dlq_py` at the desired location:
+
+```bash
+$ git clone https://github.com/Hammerling-Research-Group/dlq_py.git
+```
+
+3. Move into the cloned `dlq_py` directory:
+
+```bash
+$ cd dlq_py
+```
+
 ## Notes on the Python Implementation
 
 Here's the current structure (*subject to change as this project is in active development*):
@@ -46,29 +70,6 @@ config = {
 
   - Execute step 2 by running `python step2_dlq.py`
 
-## Installation
-
-Though the current code is still largely in "research code" form, users are still encouraged to engage with it. 
-
-To do so, the simplest approach is to clone the repo and work from the `dlq_py` directory. 
-
-1. Set your desired directory from which to work. E.g., for your Desktop:
-
-```bash
-$ cd Desktop
-```
-
-2. Clone and store `dlq_py` at the desired location:
-
-```bash
-$ git clone https://github.com/Hammerling-Research-Group/dlq_py.git
-```
-
-3. Move into the cloned `dlq_py` directory:
-
-```bash
-$ cd dlq_py
-```
 
 ## Usage
 
