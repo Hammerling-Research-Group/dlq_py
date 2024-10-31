@@ -31,6 +31,20 @@ $ git clone https://github.com/Hammerling-Research-Group/dlq_py.git
 $ cd dlq_py
 ```
 
+*Optional*: 
+
+a. If you haven't already, create the environment unique to `dlq_py`:
+
+```bash
+$ conda env create -f env.yml
+```
+
+b. Then, activate it:
+
+```bash
+conda activate dlq_py
+```
+
 ## Notes on the Python Implementation
 
 Here's the current structure (*subject to change as this project is in active development*):
