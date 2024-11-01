@@ -25,10 +25,10 @@ pd.set_option('display.float_format', '{:.6e}'.format)
 #---------------------------------------------------------------------------
 
 # Set path to your CSV file directly
-raw_sensor_observations_path = "/home/kiran/DLQ/rtp/pythonProject1/ADED_data_clean.csv"
+raw_sensor_observations_path = "./input_data_step1/ADED_data_clean.csv"
 
 # Set output directory for CSV files
-output_directory = "/home/kiran/DLQ/rtp/"
+output_directory = 'path to output_data folder/'
 
 # END OF USER INPUT - NO MODIFICATION NECESSARY BELOW THIS POINT
 #---------------------------------------------------------------------------
@@ -81,13 +81,13 @@ raw_data['date'] = raw_data['time'].dt.date
 #---------------------------------------------------------------------------
 
 # Read in sensor location csv (replace this with your actual file path)
-sensor_locations_path = "/home/kiran/DLQ/input_data/sensor_locations.csv"
+sensor_locations_path = "./input_data_step1/sensor_locations.csv"
 sensor_locs = pd.read_csv(sensor_locations_path)
 sensor_locs = sensor_locs.sort_values('name')
 n_r = len(sensor_locs)
 
 # Read in source location csv (replace this with your actual file path)
-source_locations_path = "/home/kiran/DLQ/input_data/source_locations.csv"
+source_locations_path = "./input_data_step1/source_locations.csv"
 source_locs = pd.read_csv(source_locations_path)
 n_s = len(source_locs)
 
