@@ -396,8 +396,8 @@ def main():
     config = {
         'gap_time': 5,
         'length_threshold': 2,
-        'simulation_data_path': "/home/kiran/DLQ/rtp/pythonProject2/simulation_output_new.pkl",
-        'output_file_path': "/home/kiran/DLQ/rtp/pythonProject2/output1/",
+        'simulation_data_path': "./input_data_step2/simulation_output_new.pkl",
+        'output_file_path': "path to save output",
     }
 
     # Create output directory
