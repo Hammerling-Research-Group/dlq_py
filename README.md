@@ -42,7 +42,7 @@ $ conda env create -f env.yml
 b. Then, activate it:
 
 ```bash
-conda activate dlq_py
+conda activate dlq-py
 ```
 
 ## Notes on the Python Implementation

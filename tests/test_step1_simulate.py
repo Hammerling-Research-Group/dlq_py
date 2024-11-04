@@ -1,6 +1,12 @@
 import unittest
 import numpy as np
+import sys
+import os
 from datetime import datetime
+# Get the directory of the 'code' folder relative to this test file so that helper functions can be found
+code_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../code'))
+sys.path.append(code_path)
+
 from helper_distance_conversions import (
     latlon_to_zone_number,
     zone_number_to_central_longitude,
