@@ -2,7 +2,7 @@ import unittest
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
-from fichec import find_spikes, remove_background, detect_events
+from step2_dlq import find_spikes, remove_background, detect_events
 
 
 class TestFindSpikes(unittest.TestCase):
