@@ -1,7 +1,12 @@
 import unittest
 import numpy as np
 import pandas as pd
+import sys
+import os
 from datetime import datetime, timedelta
+# Get the directory of the 'code' folder relative to this test file so that helper functions can be found
+code_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../code'))
+sys.path.append(code_path)
 from step2_dlq import find_spikes, remove_background, detect_events
 
 

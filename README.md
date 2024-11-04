@@ -42,7 +42,7 @@ $ conda env create -f env.yml
 b. Then, activate it:
 
 ```bash
-conda activate dlq_py
+conda activate dlq-py
 ```
 
 ## Notes on the Python Implementation
@@ -56,7 +56,7 @@ dlq_py/
 │   ├── step2_dlq.py
 │   ├── helper_distance_conversions.py
 │   ├── helper_gpuff_function.py
-│   ├── Input_data.zip
+│   ├── Input_data_step1.zip
 │   ├── Input_data_step2.zip
 ├── tests/
 │   ├── test_step1_simulate.py
