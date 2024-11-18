@@ -1,7 +1,7 @@
 # dlq_py
 *Production code for the Python implementation of the DLQ algorithm*
 
-[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 This repo contains the production code for the Python implementation of the DLQ algorithm. The original version is in R and can be found [here](https://github.com/Hammerling-Research-Group/dlq). As with the R version, the algorithm proceeds in two main steps in an effort to estimate methane emission start and end time (detection), source location (localization), and emission rate (quantification) using concentration observations from a network of point-in-space continuous monitoring systems. 
 
