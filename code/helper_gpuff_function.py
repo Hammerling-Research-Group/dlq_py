@@ -121,9 +121,12 @@ def compute_sigma_vals(stab_class: List[str], total_dist: float) -> Tuple[float,
             big_theta = 0.017453293 * (c - d * np.log(total_dist))
             sigma_y = 465.11628 * total_dist * np.tan(big_theta)
             sigma_z = min(a * (total_dist) ** b, 5000)
+            
 
             sigma_y_vals.append(sigma_y)
             sigma_z_vals.append(sigma_z)
+        if not sigma_y_vals or not sigma_z_vals:
+            return 1.0, 1.0    
 
     return np.mean(sigma_y_vals), np.mean(sigma_z_vals)
 
