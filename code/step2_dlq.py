@@ -1,3 +1,8 @@
+# Description: 
+# Runs the Gaussian puff atmospheric dispersion model to simulate methane
+# concentrations at CMS sensor locations given wind data and potential source locations. 
+# Author: Kiran Damodaran (kiran.damodaran@mines.edu)
+# Last Updated: Nov 2024
 import os
 import pandas as pd
 import numpy as np
@@ -6,6 +11,7 @@ import matplotlib.pyplot as plt
 import pickle
 import logging
 import traceback
+import zipfile
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -392,6 +398,18 @@ def create_visualizations(to_save, event_details, output_path):
     plt.close()
 
 def main():
+  # Unzip input data files
+input_zip_path = "./code/Input_data_step2.zip"  # Adjust this path to your zip file
+extract_path = "./code/input_data_step2"
+
+# Create extraction directory if it doesn't exist
+os.makedirs(extract_path, exist_ok=True)
+
+# Unzip the input files
+with zipfile.ZipFile(input_zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extract_path)
+print(f"Input files extracted to: {extract_path}")
+
     # Configuration
     config = {
         'gap_time': 5,
