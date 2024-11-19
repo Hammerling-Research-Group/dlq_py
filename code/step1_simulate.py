@@ -1,3 +1,9 @@
+# Description: 
+# Runs the Gaussian puff atmospheric dispersion model to simulate methane
+# concentrations at CMS sensor locations given wind data and potential source locations. 
+# Author: Kiran Damodaran (kiran.damodaran@mines.edu)
+# Last Updated: Nov 2024
+
 import os
 import pandas as pd
 import multiprocessing as mp
@@ -12,10 +18,23 @@ from functools import partial
 from math import sqrt, pi, cos, sin, atan2
 import pytz
 from typing import List, Tuple
+import zipfile
 
 # Define helper functions (you'll need to implement these separately)
 from helper_distance_conversions import latlon_to_utm
 from helper_gpuff_function import gpuff, get_stab_class
+
+# Unzip input data files
+input_zip_path = "./code/Input_data_step1.zip"  # Adjust this path to your zip file
+extract_path = "./code/input_data_step1"
+
+# Create extraction directory if it doesn't exist
+os.makedirs(extract_path, exist_ok=True)
+
+# Unzip the input files
+with zipfile.ZipFile(input_zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extract_path)
+print(f"Input files extracted to: {extract_path}")
 
 # Set Pandas and NumPy options for consistent display of small numbers
 np.set_printoptions(precision=6, suppress=True)
