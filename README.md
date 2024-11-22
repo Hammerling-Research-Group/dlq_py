@@ -3,7 +3,7 @@
 
 [![Pylint](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/pylint.yml/badge.svg)](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/pylint.yml)
 [![GitHub license](https://img.shields.io/github/license/Hammerling-Research-Group/dlq_py?color=blue)](https://github.com/Hammerling-Research-Group/dlq_py/blob/main/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/Hammerling-Research-Group/dql_py.svg)](https://github.com/Hammerling-Research-Group/dlq_py/graphs/contributors/)
+[![GitHub contributors](https://img.shields.io/github/contributors/Hammerling-Research-Group/dlq_py.svg)](https://github.com/Hammerling-Research-Group/dlq_py/graphs/contributors/)
 
 This repo contains the production code for the Python implementation of the DLQ algorithm. The original version is in R and can be found [here](https://github.com/Hammerling-Research-Group/dlq). As with the R version, the algorithm proceeds in two main steps in an effort to estimate methane emission start and end time (detection), source location (localization), and emission rate (quantification) using concentration observations from a network of point-in-space continuous monitoring systems. 
 
