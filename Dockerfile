@@ -12,7 +12,7 @@ RUN conda env create -f env.yml
 
 # Activate the environment
 RUN echo "conda activate dlq_py_env" > ~/.bashrc
-ENV PATH /opt/conda/envs/dlq_py_env/bin:$PATH
+ENV PATH=/opt/conda/envs/dlq_py_env/bin:$PATH
 
 # Run tests when the container starts
 CMD ["pytest"]
