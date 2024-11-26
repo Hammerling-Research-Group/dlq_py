@@ -398,24 +398,23 @@ def create_visualizations(to_save, event_details, output_path):
     plt.close()
 
 def main():
-  # Unzip input data files
-input_zip_path = "./code/Input_data_step2.zip"  # Adjust this path to your zip file
-extract_path = "./code/input_data_step2"
+    input_zip_path = "./code/Input_data_step2.zip"  # Adjust this path to your zip file
+    extract_path = "./code/input_data_step2"
 
-# Create extraction directory if it doesn't exist
-os.makedirs(extract_path, exist_ok=True)
+    # Create extraction directory if it doesn't exist
+    os.makedirs(extract_path, exist_ok=True)
 
-# Unzip the input files
-with zipfile.ZipFile(input_zip_path, 'r') as zip_ref:
-    zip_ref.extractall(extract_path)
-print(f"Input files extracted to: {extract_path}")
+    # Unzip the input files
+    with zipfile.ZipFile(input_zip_path, 'r') as zip_ref:
+        zip_ref.extractall(extract_path)
+    print(f"Input files extracted to: {extract_path}")
 
     # Configuration
     config = {
         'gap_time': 5,
         'length_threshold': 2,
-        'simulation_data_path': "./input_data_step2/simulation_output_new.pkl",
-        'output_file_path': "path to save output",
+        'simulation_data_path': "./code/input_data_step2/simulation_output_new.pkl",
+        'output_file_path': 'path to output_data folder/',
     }
 
     # Create output directory
