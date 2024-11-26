@@ -21,8 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install numpy pandas scipy pytest
-
+          pip install numpy pandas scipy typing joblib tqdm pytz matplotlib pytest
+  
       - name: Run tests
         run: |
           python -m unittest discover -s tests
