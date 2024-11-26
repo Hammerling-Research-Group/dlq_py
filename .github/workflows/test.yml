@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install numpy pandas unittest pytest
+          pip install numpy pandas pytest
 
       - name: Run tests
         run: |
