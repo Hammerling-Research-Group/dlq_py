@@ -25,4 +25,4 @@ jobs:
           
       - name: Run tests
         run: |
-          pytest dlq_py/tests
+          pytest tests
