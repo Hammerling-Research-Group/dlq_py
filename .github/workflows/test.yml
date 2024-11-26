@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pytest
+          pip install unittest numpy pandas sys os datetime pytest
           
       - name: Run tests
         run: |
