@@ -14,15 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: '3.7'
-
-      - name: Install dependencies
-        run: |
-          pip install unittest numpy pandas sys os datetime pytest
+          auto-update-conda: true
+          python-version: 3.10
           
+      - name: Create conda environment
+        run: conda env create -f env.yml
+
       - name: Run tests
         run: |
+          source activate dlq_py_env
           pytest tests
