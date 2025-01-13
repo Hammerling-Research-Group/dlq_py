@@ -1,7 +1,8 @@
 # dlq_py
 *Production code for the Python implementation of the DLQ algorithm*
 
-[![Pylint](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/CI.yml/badge.svg)](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/CI.yml)
+[![CI tests](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/CI%20tests.yml/badge.svg)](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/CI%20tests.yml)
+[![Check Link Rot](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/check-link-rot.yaml/badge.svg)](https://github.com/Hammerling-Research-Group/dlq_py/actions/workflows/check-link-rot.yaml)
 [![GitHub license](https://img.shields.io/github/license/Hammerling-Research-Group/dlq_py?color=blue)](https://github.com/Hammerling-Research-Group/dlq_py/blob/main/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/Hammerling-Research-Group/dlq_py.svg)](https://github.com/Hammerling-Research-Group/dlq_py/graphs/contributors/)
 
